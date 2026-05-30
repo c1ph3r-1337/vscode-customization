@@ -6,8 +6,6 @@ A highly minimal, distraction-free VS Code setup focused on centered elements, h
 
 ![Vinyl Launcher Preview](./preview.gif)
 
-*Experience the smooth rotation and modern UI of Vinyl Launcher.*
-
 ---
 
 ## ✨ Features
