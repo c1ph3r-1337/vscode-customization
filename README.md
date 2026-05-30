@@ -27,8 +27,7 @@ A highly minimal, distraction-free VS Code setup focused on centered elements, h
 
 1. **[Custom CSS and JS Loader](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)** (By be5invis) - *Required for all visual hacks.*
 2. **Material Theme (but I won't sue you)** - **BUILD FROM SOURCE** (See instructions below).
-3. **[Aura Dracula Spirit](https://marketplace.visualstudio.com/items?itemName=josemurilloc.aura-spirit-dracula)** - Alternative color theme.
-4. **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=pkief.material-icon-theme)** - For consistent file/folder icons.
+3. **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=pkief.material-icon-theme)** - For consistent file/folder icons.
 
 ---
 
@@ -79,5 +78,7 @@ sed -i 's/<\/html>/<!-- vscode-custom-css-start --><link rel="stylesheet" href="
 
 ## ⌨️ Useful Shortcuts
 - `Ctrl + B`: Toggle Sidebar (since Activity Bar is hidden).
+- `Ctrl + Shift + E`: Explorer.
+- `Ctrl + Shift + X`: Extensions. 
 - `Ctrl + Shift + P`: Command Palette (Centered with Blur).
 - `Alt`: Show Menu Bar temporarily.
