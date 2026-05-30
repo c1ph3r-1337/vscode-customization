@@ -1,0 +1,91 @@
+/* --- WINDOW-LEVEL CENTERING --- */
+/* Forces the filename and path to the absolute horizontal center of the window */
+.monaco-workbench .part.editor > .content .editor-group-container > .title .label-container {
+    position: fixed !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    height: 35px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 1000 !important;
+    pointer-events: none !important;
+}
+
+.monaco-workbench .part.editor > .content .editor-group-container > .title .label-container * {
+    pointer-events: auto !important;
+}
+
+.monaco-workbench .part.editor > .content .editor-group-container > .title .title-label {
+    text-align: center !important;
+}
+
+/* --- HOVER-TO-SHOW ACTION BUTTONS --- */
+/* Pushes Play/Git/Close buttons to the far right and hides them until hover */
+.monaco-workbench .part.editor > .content .editor-group-container > .title .title-actions {
+    margin-left: auto !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.monaco-workbench .part.editor > .content .editor-group-container > .title:hover .title-actions {
+    opacity: 1 !important;
+}
+
+/* --- HIDE EXPLORER ARROWS VISUALLY --- */
+/* Makes arrows invisible but keeps their space and click functionality */
+.monaco-tl-twistie {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* --- HIDE TREE INDENT GUIDES (FOLLOW LINES) --- */
+.monaco-list-row .monaco-tl-indent > .monaco-tl-indent-guide {
+    display: none !important;
+    border: none !important;
+}
+
+/* --- CENTER COMMAND PALETTE --- */
+.quick-input-widget {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7) !important;
+    width: 650px !important;
+    background-color: var(--vscode-sideBar-background) !important;
+    padding: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* --- MINIMAL BACKGROUND BLUR --- */
+.monaco-workbench:has(.quick-input-widget:not([style*="display: none"])) .part.editor,
+.monaco-workbench:has(.quick-input-widget:not([style*="display: none"])) .part.sidebar,
+.monaco-workbench:has(.quick-input-widget:not([style*="display: none"])) .part.activitybar {
+    filter: blur(3px) brightness(0.8) !important;
+    transition: filter 0.2s ease !important;
+}
+
+.monaco-workbench .part.editor,
+.monaco-workbench .part.sidebar,
+.monaco-workbench .part.activitybar {
+    transition: filter 0.2s ease !important;
+}
+
+.quick-input-widget {
+    filter: none !important;
+    z-index: 2000 !important;
+}
+
+/* --- HIDE ALL SCROLLBARS --- */
+.monaco-scrollable-element > .scrollbar,
+.monaco-scrollable-element > .scrollbar > .slider,
+.monaco-editor .scrollbar,
+.monaco-workbench .part.sidebar .scrollbar {
+    display: none !important;
+    width: 0px !important;
+    height: 0px !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
