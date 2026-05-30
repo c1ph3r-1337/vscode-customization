@@ -78,6 +78,7 @@ sed -i 's/<\/html>/<!-- vscode-custom-css-start --><link rel="stylesheet" href="
 
 ## ⌨️ Useful Shortcuts
 - `Ctrl + B`: Toggle Sidebar (since Activity Bar is hidden).
+- `Ctrl + P`: Changing recent Tabs. 
 - `Ctrl + Shift + E`: Explorer.
 - `Ctrl + Shift + X`: Extensions. 
 - `Ctrl + Shift + P`: Command Palette (Centered with Blur).
