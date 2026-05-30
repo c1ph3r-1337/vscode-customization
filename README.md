@@ -2,6 +2,14 @@
 
 A highly minimal, distraction-free VS Code setup focused on centered elements, hidden bars, and subtle animations.
 
+## ✨ Preview
+
+![Vinyl Launcher Preview](./preview.gif)
+
+*Experience the smooth rotation and modern UI of Vinyl Launcher.*
+
+---
+
 ## ✨ Features
 
 ### 1. Core Layout
